@@ -11,6 +11,8 @@ public class ConcreteMediator implements Mediator {
     @Override
     public void send(String msg, Device sender) {
         if (sender.getStatus()) {
+            System.out.format("%s send messages: %s",sender.getName(),msg);
+            System.out.println();
             for (Device receiver : devices) {
                 if (receiver.getStatus()) {
                     if (receiver != sender) {
@@ -20,11 +22,10 @@ public class ConcreteMediator implements Mediator {
                     System.out.format("Send to %s is unsuccessful ", receiver.getName());
                 }
             }
-            System.out.println();
         } else{
             System.out.format("Can't send!! %s is turn off",sender.getName());
-            System.out.println();
         }
+        System.out.println();
 
     }
 

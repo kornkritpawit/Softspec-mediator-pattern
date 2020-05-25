@@ -2,10 +2,10 @@ package ssdMediatorDesignPattern;
 
 //concrete colleague 2.2
 public class Tablet implements Device{
-    private ConcreteMediator mediator;
+    private Mediator mediator;
     private boolean status;
     private String name;
-    public Tablet (ConcreteMediator m, String name){
+    public Tablet (Mediator m, String name){
         this.mediator = m;
         this.status = true;
         this.name = name;

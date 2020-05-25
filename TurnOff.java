@@ -2,9 +2,9 @@ package ssdMediatorDesignPattern;
 
 //concrete colleague 1.2
 public class TurnOff implements Command {
-    private ConcreteMediator med;
+    private Mediator med;
 
-    public TurnOff(ConcreteMediator med) {this.med = med;}
+    public TurnOff(Mediator med) {this.med = med;}
 
     @Override
     public void execute(Device obj) {
