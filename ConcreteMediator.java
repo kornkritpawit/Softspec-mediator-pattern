@@ -19,7 +19,7 @@ public class ConcreteMediator implements Mediator {
                         receiver.receiveMsg(msg);
                     }
                 } else {
-                    System.out.format("Send to %s is unsuccessful ", receiver.getName());
+                    System.out.format("Send to %s is unsuccessful \n", receiver.getName());
                 }
             }
         } else{

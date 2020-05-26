@@ -39,7 +39,7 @@ public class Mobile implements Device {
 
     @Override
     public void receiveMsg(String msg) {
-        System.out.format("%s receives message: %s ", getName(), msg);
+        System.out.format("%s receives message: %s \n", getName(), msg);
     }
     @Override
     public void on() {
